@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "process exited with code 1",
+    "dev": "env-cmd ./config/dev.env nodemon",
+    "start": "env-cmd ./config/test.env/ node index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "date-and-time": "^2.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.11",
+    "parseurl": "^1.3.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "jest": "^27.5.1",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15",
+    "should": "^13.2.3",
+    "supertest": "^6.2.2"
+  }
+}
